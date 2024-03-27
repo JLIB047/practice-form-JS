@@ -10,12 +10,12 @@
         <h1>Music Genre Survey Form</h1>
     </section>
 <form action="" method="POST">
-    <section class="survey-question">
+    <section class="survey-question1">
         <label for="name">What is your name?</label>
-        <input type="text" id="name" name="name">
+        <input type="text" id="name" name="name" placeholder="NAME">
     </section>
 
-    <section class="survey-question">
+    <section class="survey-question2">
         <label for="genre">What is your favorite genre of music?</label>
         <select name="genre" id="genre">
             <option value="rocknroll">Rock N Roll</option>
@@ -24,13 +24,36 @@
             <option value="counry">Country</option>
             <option value="techno">Tecno</option>
         </select>
-        <label for="genre-text">Please write in your favorite genre is not listed.</label>
+    </section>
+    <section class="survey-question2">
+        <label for="genre-text" id="genre-text">Please write in your favorite genre is not listed.</label>
         <input type="text" id="genre-text" name="genre-text">
     </section>
 
-    <section class="survey-question">
-        
+    <section class="survey-question3">
+        <span>How many shows are you planning to see this year?</span>
+        <input type="radio" name="shows" id="1-5" value="1-5">
+        <label value="1-5">1-5 shows</label>
+        <input type="radio" name="shows" id="6-10" value="6-10">
+        <label value="6-10">6-10 shows</label>
+        <input type="radio" name="shows" id="11+" value="11+">
+        <label value="11+">11+ shows</label>
     </section>
+
+    <section class="survey-question4">
+        <span>What is the best City to see a show in?</span>
+        <input type="checkbox" name="city" id="newyork" value="newyork">
+        <label value="newyork">New York</label>
+        <input type="checkbox" name="city" id="london" value="london">
+        <label value="london">London</label>
+        <input type="checkbox" name="city" id="sanfran" value="sanfran">
+        <label value="sanfran">SanFrancisco</label>
+    </section>
+    <section class="survey-question4">
+        <label for="city">Please write in your favorite city.</label>
+        <input type="text" name="city" id="city">
+    </section>
+
 
 </form>
     
